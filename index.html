@@ -31,13 +31,6 @@ Andrew Geddes - Home
 
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/530da5eef7.js"></script>
-<?php
-  $birthDate = "03/21/2002";
-  $birthDate = explode("/", $birthDate);
-  $age = (date("md", date("U", mktime(0, 0, 0, $birthDate[0], $birthDate[1], $birthDate[2]))) > date("md")
-    ? ((date("Y") - $birthDate[2]) - 1)
-    : (date("Y") - $birthDate[2]));
-?>
   </head>
 <body class="animated fadeIn">
     <div class="site-wrapper">
@@ -60,7 +53,7 @@ Andrew Geddes - Home
 
           <div class="inner cover shadow-text">
             <h1 class="cover-heading animated zoomIn">Andrew Geddes</h1>
-            <p class="lead">Hello, my name is Andrew. I'm a <?php echo $age; ?> year old designer & developer from The Netherlands. Currently available for freelance work.</p>
+            <p class="lead">Hello, my name is Andrew. I'm a 14 year old designer & developer from The Netherlands. Currently available for freelance work.</p>
             <p class="lead">
 <div class="container">
   <a href="http://facebook.com/editandrew">
